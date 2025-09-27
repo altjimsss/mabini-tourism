@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MABINI</title>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <nav>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-items active">Home</a>
+      <a href="#about" class="nav-items">About</a>
+      <a href="#reviews" class="nav-items">Reviews</a>
+      <a href="#gallery" class="nav-items">Gallery</a>
+      <a href="#map" class="nav-items">Contacts</a>
+    </div>
+  </nav>
+</header>
+
+
+
+  <!-- First Section - Hero -->
+  <section id="hero" class="hero-section">
+    <div class="content">
+      <img src="img/anilaoback.jpg" alt="background" class="back-3">
+
+      <div class="title">
+        <h3>The Land and Sea of Serene Beauty</h3>
+        <h1>MABINI</h1>
+      </div>
+
+      <img src="img/boat1.png" alt="boat" class="back-1">
+
+      <div class="info-wrap">
+        <p>
+          Mabini, Batangas is a coastal haven where mountains kiss the sea and coral reefs bloom beneath crystal waters. From the diving paradise of Anilao to the peaceful trails of Mt. Gulugod-Baboy, it's a place where nature, heritage, and adventure come alive. Simple, soulful, unforgettable.
+        </p>
+      </div>
+
+      <div class="cta">
+        <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+          Explore More
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="slider">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="new-section">
+    <div class="section-content">
+      <h2>Discover Paradise</h2>
+      <p>Immerse yourself in the natural wonders and rich culture of Mabini, where every moment creates lasting memories and every view takes your breath away.</p>
+      
+      <div class="grid-container">
+        <div class="grid-item">
+          <i class="fas fa-water"></i>
+          <h3>Crystal Waters</h3>
+          <p>Dive into pristine coral reefs and swim alongside vibrant marine life in some of the clearest waters in the Philippines.</p>
+        </div>
+        
+        <div class="grid-item">
+          <i class="fas fa-mountain"></i>
+          <h3>Scenic Trails</h3>
+          <p>Hike through lush mountains and discover breathtaking viewpoints that showcase the natural beauty of Batangas.</p>
+        </div>
+        
+        <div class="grid-item">
+          <i class="fas fa-utensils"></i>
+          <h3>Local Cuisine</h3>
+          <p>Savor authentic Filipino flavors with fresh seafood and traditional dishes that celebrate the region's culinary heritage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews-section">
+    <h2 class="review-title">What People Say</h2>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-track">
+        <div class="review-slide">
+          <img src="img/profile1.jpg" alt="User 1" class="profile-pic">
+          <h3>Allen James M. Martillan</h3>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p class="review-text">"Amazing experience! The scenery and hospitality were unforgettable."</p>
+        </div>
+
+        <div class="review-slide">
+          <img src="img/profile2.jpg" alt="User 2" class="profile-pic">
+          <h3>Cindy H. Bulanhagui</h3>
+          <p class="stars">⭐⭐⭐⭐</p>
+          <p class="review-text">"A perfect getaway! Loved the crystal-clear waters and friendly locals."</p>
+        </div>
+
+        <div class="review-slide">
+          <img src="img/profile3.jpg" alt="User 3" class="profile-pic">
+          <h3>Jashrylle Lee V. Abante</h3>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p class="review-text">"The adventure was beyond my expectations. Definitely coming back again!"</p>
+        </div>
+
+        <div class="review-slide">
+          <img src="img/profile1.jpg" alt="User 1" class="profile-pic">
+          <h3>Allen James M. Martillan</h3>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p class="review-text">"Amazing experience! The scenery and hospitality were unforgettable."</p>
+        </div>
+
+        <div class="review-slide">
+          <img src="img/profile2.jpg" alt="User 2" class="profile-pic">
+          <h3>Cindy H. Bulanhagui</h3>
+          <p class="stars">⭐⭐⭐⭐</p>
+          <p class="review-text">"A perfect getaway! Loved the crystal-clear waters and friendly locals."</p>
+        </div>
+      </div>
+
+      <div class="blur-left"></div>
+      <div class="blur-right"></div>
+    </div>
+
+    <div class="stats-section">
+      <div class="stat-card">
+        <h2>15,000+</h2>
+        <p>Happy Divers</p>
+      </div>
+      <div class="stat-card">
+        <h2>4.8/5</h2>
+        <p>Average Rating</p>
+      </div>
+      <div class="stat-card">
+        <h2>85%</h2>
+        <p>Return Visitors</p>
+      </div>
+      <div class="stat-card">
+        <h2>100%</h2>
+        <p>Safety Record</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path fill="#2596be" fill-opacity="1" 
+          d="M0,80 C480,160 960,0 1440,80 L1440,0 L0,0Z"></path>
+      </svg>
+    </div>
+
+    <h2 class="gallery-title">Discover Mabini</h2>
+    <p class="gallery-subtitle">A glimpse of the serene beauty from land to sea.</p>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://i0.wp.com/lbtimes.ph/wp-content/uploads/2023/07/Screenshot-1349.png?ssl=1" alt="Anilao Dive Spot">
+        <div class="overlay">Anilao Dive Spot</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://miro.medium.com/v2/resize:fit:5040/1*r8ZQZCf-6-dqVvOfInbBeA.jpeg" alt="Mt. Gulugod Baboy">
+        <div class="overlay">Mt. Gulugod-Baboy</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://www.thepoortraveler.net/wp-content/uploads/2014/02/Anilao-Mabini-Batangas-Sunset.jpg" alt="Mabini Sunset">
+        <div class="overlay">Mabini Sunset</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://myscubadivinggearguide.com/wp-content/uploads/2018/12/Anilao1.jpg" alt="Coral Reef">
+        <div class="overlay">Coral Reef</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://www.thepoortraveler.net/wp-content/uploads/2017/03/Masasa-Beach-Batangas-1.jpg" alt="Beach Shoreline">
+        <div class="overlay">Beach Shoreline</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://steemitimages.com/DQmekuwHS4Mww33tfssQjPH6UnJzz2fBsiWAghQupcpcai4/almost%20fiesta.jpg" alt="Local Festival">
+        <div class="overlay">Local Festival</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/9d/ec/f5/aerial-pic-by-c-carlos.jpg?w=900&h=500&s=1" alt="Anilao Beach">
+        <div class="overlay">Anilao Beach</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://image.kkday.com/v2/image/get/s1.kkday.com/product_129819/20220526071712_g7Eu2/jpg" alt="Mabini Cliff View">
+        <div class="overlay">Mabini Cliff View</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://d2p1cf6997m1ir.cloudfront.net/media/thumbnails/06/00/0600e284c1b435ed9264e179ff80428f.webp" alt="Scuba Diving Spot">
+        <div class="overlay">Scuba Diving Spot</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://thequeensescape.com/wp-content/uploads/2020/11/Mt.-Gulugod-Baboy-Hike-1-1024x576.jpg" alt="Mt. Gulugod Panorama">
+        <div class="overlay">Mt. Gulugod Panorama</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://businessmirror.com.ph/wp-content/uploads/2024/02/bio01c-021824.jpg" alt="Coastal View">
+        <div class="overlay">Coastal View</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://c1.staticflickr.com/3/2885/33488261481_aabcc88b4b_k.jpg" alt="Sombrero Island">
+        <div class="overlay">Sombrero Island</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="map" class="map-section">
+    <div class="map-blur"></div>
+    <h2 class="map-title">Find Us Here</h2>
+
+    <div class="map-grid">
+      <div class="map-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+        <p>Mabini, Batangas, Philippines</p>
+      </div>
+      <div class="map-card">
+        <i class="fas fa-phone-alt"></i>
+        <h3>Contact</h3>
+        <p>+63 912 345 6789</p>
+      </div>
+      <div class="map-card">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>explorescape@mabini.ph</p>
+      </div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="map-toggle" onclick="toggleMap()">Show Map</button>
+
+    <!-- Collapsible Map Container -->
+    <div class="map-container" id="mapContainer">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.174482888776!2d120.73542221483085!3d13.746718101184373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bdf92b64d88d3f%3A0x3e68b0d62d1d8360!2sMabini%2C%20Batangas!5e0!3m2!1sen!2sph!4v1695824212345!5m2!1sen!2sph"
+    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Discover Mabini</h3>
+      <p>Experience the serene beauty of Mabini — from stunning coastlines to vibrant culture. 
+      Let’s explore together.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#map">Contacts</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-socials">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Discover Mabini | Made by Allen James M. Martillan</p>
+  </div>
+</footer>
+
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Update active navigation item on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navItems = document.querySelectorAll('nav a');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${current}`) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // Animate elements on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.grid-item, .review-item').forEach(item => {
+      observer.observe(item);
+    });
+
+    // Collapsible Map
+    function toggleMap() {
+      const mapContainer = document.getElementById("mapContainer");
+      const button = document.querySelector(".map-toggle");
+
+      if (mapContainer.style.maxHeight && mapContainer.style.maxHeight !== "0px") {
+        mapContainer.style.maxHeight = "0";
+        button.textContent = "Show Map";
+      } else {
+        mapContainer.style.maxHeight = "500px"; // matches iframe height
+        button.textContent = "Hide Map";
+      }
+    }
+    function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
+
+  </script>
+
+</body>
+</html>
